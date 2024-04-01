@@ -13,15 +13,6 @@ This project is a Java-based graphical user interface (GUI) application that gen
 
 Before running this project, make sure you have Java Development Kit (JDK21) installed on your machine.
 
-## Running the Application
-
-To run the application, compile the Java code and run the main class. The GUI should appear, allowing you to enter the details of the reference you wish to format.
-
-```bash
-javac ReferenceGeneratorGUI.java
-java ReferenceGeneratorGUI
-```
-
 ## Usage
 
 Fill in the bibliographic details in the provided text fields:
