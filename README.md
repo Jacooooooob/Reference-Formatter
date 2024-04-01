@@ -11,7 +11,7 @@ This project is a Java-based graphical user interface (GUI) application that gen
 
 ## Prerequisites
 
-Before running this project, make sure you have Java Development Kit (JDK) installed on your machine.
+Before running this project, make sure you have Java Development Kit (JDK21) installed on your machine.
 
 ## Running the Application
 
