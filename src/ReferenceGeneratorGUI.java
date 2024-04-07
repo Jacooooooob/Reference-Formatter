@@ -23,12 +23,9 @@ public class ReferenceGeneratorGUI {
 
         initializeFields();
 
-        // 设置下拉框
         authorCountComboBox = new JComboBox<>(new String[]{"1", "2", "3", "3+ (Use 'et al.)"});
-        // 添加事件监听器来响应选择变化
         authorCountComboBox.addActionListener(e -> updateAuthorFieldsEnabled());
-        // 由于我们改变了初始化顺序，确保立即更新字段状态以匹配下拉框的默认选择
-        updateAuthorFieldsEnabled(); // 初始化时立即更新输入框状态
+        updateAuthorFieldsEnabled();
 
         JPanel inputPanel = new JPanel();
         inputPanel.setLayout(new BoxLayout(inputPanel, BoxLayout.PAGE_AXIS));
@@ -112,7 +109,6 @@ public class ReferenceGeneratorGUI {
                 break;
         }
 
-        // 根据选择的作者数量启用或禁用相应的输入框
         for (int i = 0; i < authorLastNameFields.size(); i++) {
             boolean enabled = i < selectedCount;
             authorLastNameFields.get(i).setEnabled(enabled);
@@ -124,7 +120,6 @@ public class ReferenceGeneratorGUI {
             }
         }
 
-        // 确保更新UI
         frame.validate();
         frame.repaint();
     }

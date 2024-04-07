@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Reference Formatter:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Reference_Formatter_jar</output-path>
+    <root id="archive" name="Reference Formatter.jar">
+      <element id="module-output" name="Reference Formatter" />
+    </root>
+  </artifact>
+</component>
