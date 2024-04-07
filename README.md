@@ -52,3 +52,22 @@ For any additional questions or feedback, please open an issue in the project re
 ### Technical Improvements
 - Refactored the event handling logic for the dropdown menu to ensure more reliable performance. The application now more efficiently updates the state of author input fields in response to user selections.
 - Optimized the layout management for the main application window, ensuring that components are properly sized and positioned according to user expectations. This includes adjustments to the preferred sizes of components and modifications to the layout to better accommodate various screen sizes and resolutions.
+
+## 2024-04-07 Update - [1.0]
+
+![image](https://github.com/Jacooooooob/Reference-Formatter/assets/96058597/a71857ea-d1dd-4616-af20-fe70c280d660)
+
+### Added
+- Initial release of the application.
+- Packaged the application using exe4j, creating a standalone executable version for Windows.
+- Basic functionality implemented, allowing users to perform core operations seamlessly.
+
+### Fixed
+- Various minor bugs identified during the pre-release testing phase have been addressed to ensure a smooth user experience.
+
+### Known Issues
+- There are currently no known issues. Feedback from users is welcome to help identify and resolve any potential problems in future updates.
+
+## Coming Soon
+- Stay tuned for updates on new features and improvements based on user feedback and technological advancements.
+
