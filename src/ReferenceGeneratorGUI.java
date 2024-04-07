@@ -218,9 +218,19 @@ public class ReferenceGeneratorGUI {
 
         String latexReference = String.format(
                 "%s (%s) '%s', \\textit{%s}, %s(%s), pp. %s. Available at: \\url{%s} (Accessed %s %s %s).",
-                authors.toString().replaceAll("<i>", "\\textit{").replaceAll("</i>", "}"),
-                year, articleTitle, escapeLatex(journalTitle), volume, issue, pages, escapeLatex(url), accessDay, escapeLatex(accessMonth), accessYear
+                convertItalicsToLatex(authors.toString()),
+                year,
+                convertItalicsToLatex(articleTitle),
+                escapeLatex(journalTitle),
+                volume,
+                issue,
+                pages,
+                escapeLatex(url),
+                accessDay,
+                escapeLatex(accessMonth),
+                accessYear
         );
+
 
         codePane.setText("<html>Markdown:<br>" + markdownReference + "<br><br>LaTeX:<br>" + latexReference + "</html>");
     }
@@ -247,6 +257,12 @@ public class ReferenceGeneratorGUI {
         resultPane.setText("");
         codePane.setText("");
     }
+
+    public String convertItalicsToLatex(String input) {
+        // 使用正则表达式匹配<i>和</i>标签，并替换为\textit{...}
+        return input.replaceAll("<i>(.*?)</i>", "\\\\textit{$1}");
+    }
+
 
     private String escapeLatex(String text) {
         return text.replace("%", "\\%")
